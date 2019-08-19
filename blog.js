@@ -55,7 +55,8 @@ Ext.onReady(function(){
             }
         ],
         listeners:{
-            beforeclose: function(){
+            beforeclose: function(p){
+                p.hide();
                 return false;
             }
         }
